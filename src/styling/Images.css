@@ -1,0 +1,6 @@
+.images-container{
+    display: flex;
+    gap: 2%;
+    height: 35vh;
+    overflow: hidden;
+}

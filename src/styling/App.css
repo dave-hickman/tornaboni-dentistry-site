@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(254, 253, 235);
+}
+
+h1,
+h2 {
+  font-size: 4rem;
+  margin: 0;
+  font-family: "new-spirit-condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 39, 39);
+  text-align: center;
+}
+
+.title-container{
+  margin-top: 4rem;
+}

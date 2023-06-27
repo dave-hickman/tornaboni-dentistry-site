@@ -1,0 +1,23 @@
+.contact-container{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2rem 2rem 5rem;
+}
+
+.top-row, .bottom-row{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: .8rem;
+    align-items: baseline;
+
+}
+
+.row-info{
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    width: 2rem;
+    height: 1.2rem;
+}
