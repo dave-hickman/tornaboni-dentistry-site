@@ -1,6 +1,7 @@
 .images-container{
     display: flex;
-    gap: 2%;
+    gap: 1%;
     height: 35vh;
-    overflow: hidden;
+    overflow: auto;
+    white-space: nowrap;
 }
