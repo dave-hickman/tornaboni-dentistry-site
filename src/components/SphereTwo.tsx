@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { Mesh } from "three";
-import { MeshStandardMaterial } from "three";
 
 const SphereTwo = () => {
   const sphereRef = useRef<Mesh>(null!);

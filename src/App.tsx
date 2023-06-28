@@ -1,15 +1,14 @@
 import "./styling/App.css";
 import Contact from "./components/Contact";
 import Images from "./components/Images";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Suspense, useRef, useState } from "react";
+import { Canvas} from "@react-three/fiber";
+import { Suspense } from "react";
 import Sphere from "./components/Sphere";
 import SphereTwo from "./components/SphereTwo";
 import { OrbitControls } from "@react-three/drei";
 import SphereThree from "./components/SphereThree";
 import Blur from "./components/Blur";
 import Nav from "./components/Nav";
-import Whatsapp from "./components/Links";
 import Links from "./components/Links";
 import MapPage from "./components/Map";
 import { Route, Routes } from "react-router-dom";
@@ -58,9 +57,9 @@ function App() {
             <ambientLight />
             <pointLight position={[10, 10, 10]} />
 
-            {/* <Sphere />
+            <Sphere />
         <SphereTwo/>
-        <SphereThree/> */}
+        <SphereThree/>
           </Canvas>
         </Suspense>
         <Blur />
