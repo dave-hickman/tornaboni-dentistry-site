@@ -51,7 +51,7 @@ function App() {
         <Suspense>
           <Canvas
             style={{ height: "100vh", width: "120vw" }}
-            camera={{ position: [20, 10, 0], fov: 75 }}
+            camera={{ position: [15, 10, 0], fov: 75 }}
           >
             <OrbitControls />
             <ambientLight />
