@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styling/Links.css";
 
 const Links = () => {
@@ -26,7 +27,7 @@ const Links = () => {
       >
         <p className="button-desc">Click for whatsapp</p>
       </a>
-      
+      <Link to={`/mappa`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -39,6 +40,7 @@ const Links = () => {
         </svg>
    
      
+        </Link>
         <p className="button-desc">Visualizza la mappa</p>
  
     </section>

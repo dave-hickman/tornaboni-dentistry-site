@@ -1,3 +1,13 @@
 .map-container {
-    z-index: 10
+    z-index: 10;
+    height: 80%;
+    width: 80%;
+    top: 30%;
+    left: 10%;
+    position: absolute;
+}
+
+.google-map,.map{
+    height: 70%;
+    width: 70%;
 }

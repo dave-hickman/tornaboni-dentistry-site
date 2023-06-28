@@ -1,7 +1,9 @@
 import "../styling/Map.css";
-import GoogleMapReact from "google-map-react";
-import dotenv from 'dotenv'
-dotenv.config()
+import { useLoadScript, GoogleMap, Marker} from "@react-google-maps/api";
+import { useMemo } from "react";
+
+
+
 
 interface Location {
   address: string;
@@ -15,19 +17,26 @@ interface Props {
 }
 
 const MapPage = ({ location, zoomLevel }: Props) => {
-    const apiKey = process.env.API_KEY || ""
+    const name = import.meta.env.VITE_API_KEY
+    console.log(name)
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: name,
+  });
+  const center = useMemo(() => ({ lat: location.lat, lng: location.lng }), []);
   return (
     <section className="map-container">
       <div className="google-map">
-        <GoogleMapReact 
-        bootstrapURLKeys={{key: apiKey}}
-        defaultCenter={location}
-        defaultZoom={zoomLevel}>
-        {/* <LocationPin
-        lat={location.lat}
-        lng={location.lng}
-        text={location.address}/> */}
-        </GoogleMapReact>
+        {!isLoaded ? (
+          <p>Loading...</p>
+        ) : (
+          <GoogleMap
+            mapContainerClassName="map"
+            center={center}
+            zoom={zoomLevel}
+          >
+            <Marker position={{lat: location.lat, lng: location.lng}}/>
+          </GoogleMap>
+        )}
       </div>
     </section>
   );
