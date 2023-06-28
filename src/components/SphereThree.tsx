@@ -1,8 +1,8 @@
 import { useRef } from "react";
-import { MeshStandardMaterial } from "three";
+import { Mesh, MeshStandardMaterial } from "three";
 
 const SphereThree = () => {
-  const sphereRef = useRef();
+  const sphereRef = useRef<Mesh>(null!);
   return (
     <mesh ref={sphereRef} scale={1.5} position={[-10, -15, -4]}>
       <icosahedronBufferGeometry args={[2, 20]} />

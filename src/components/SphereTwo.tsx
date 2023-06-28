@@ -1,8 +1,9 @@
 import { useRef } from "react";
+import { Mesh } from "three";
 import { MeshStandardMaterial } from "three";
 
 const SphereTwo = () => {
-  const sphereRef = useRef();
+  const sphereRef = useRef<Mesh>(null!);
   console.log(sphereRef)
   return (
     <mesh ref={sphereRef} scale={1.5} position={[5, 7, 4]}>
