@@ -1,7 +1,35 @@
 .images-container{
     display: flex;
+    position: absolute;
+    justify-content: center;
     gap: 1%;
-    height: 35vh;
+    height: fit-content;
     overflow: auto;
     white-space: nowrap;
+    z-index: 10;
+    right: 10rem;
+    top: 9rem;
+    
+}
+
+.image{
+    height: 500px;
+    border-radius: 150px 150px 0 0px;
+}
+
+
+@media(min-width: 400px){
+    /* .images-container{
+        height: 40vh
+    } */
+}
+@media(min-width: 650px){
+    .images-container{
+        /* height: 60%; */
+        border: 1px ;
+    }
+
+    /* .image{
+        height: 300px;
+    } */
 }

@@ -6,9 +6,9 @@ import "../styling/Images.css"
 const Images = () => {
   return (
     <section className="images-container">
-      <img src={waitingRoom} alt="dentist waiting room"/>
-      <img src={sign} alt="tornoboni sign"/>
-      <img src={giulia} alt="dentist"/>
+      <img className="image" src={waitingRoom} alt="dentist waiting room"/>
+      {/* <img src={sign} alt="tornoboni sign"/>
+      <img src={giulia} alt="dentist"/> */}
     </section>
   );
 };

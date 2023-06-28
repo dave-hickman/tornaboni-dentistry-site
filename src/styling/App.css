@@ -9,20 +9,59 @@
 }
 
 body {
-  background-color: rgb(254, 253, 235);
+  background-color: #c6e7ed;
+  
 }
 
 h1,
 h2 {
   font-size: 4rem;
   margin: 0;
-  font-family: "new-spirit-condensed", serif;
+  font-family: "Gopher", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: rgb(255, 39, 39);
+  color: rgb(27, 27, 27);
   text-align: center;
 }
 
 .title-container{
   margin-top: 3rem;
+  text-align: left;
+}
+
+.title-and-contacts{
+  position: absolute;
+  max-width: 50%;
+  z-index: 10;
+  margin: 2rem 0 0;
+}
+
+.title-container h1{
+  font-size: 2.6rem;
+  font-weight: 600;
+
+}
+
+
+@media (min-width: 400px){
+  h1, h2{
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 650px){
+  .container{
+    display: flex;
+    width: 100vw;
+
+  }
+
+  .title-container{
+    margin: 3rem 8rem;
+  }
+
+  h1,h2{
+    font-size: 4rem;
+  }
+
 }
